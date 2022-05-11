@@ -1,0 +1,115 @@
+@import url('https://fonts.google.com/css?family=Poppins:400,500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: tomato;
+    transition: 0.5s;
+}
+
+
+
+.block {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgb(174, 176, 179);
+
+    display: flex;
+    align-items: center;
+}
+
+.block_item {
+    width: 50%;
+}
+
+.block-item {
+    text-align: center;
+}
+.block-item_title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: azure;
+    margin-bottom: 10px;
+    margin: 0 60px;
+
+
+}
+
+.block-item_btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: azure#fff;
+    color: black#333;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+
+.form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+
+    position: center;
+    transition: 0.5s;
+}
+
+.form_signin{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.form_signup {
+    left: 100%;
+    transition-delay: 0s;
+}
+
+
+
+.form_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black#333;
+}
+.form_input {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px black#333;
+    font-size: inherit;
+}
+
+.form_btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: burlywood;
+    color: azure;
+    padding: 10px 50px;
+}
+
+.form_btn_signup {
+    background-color: brown;
+}
+.signin-btn {
+    margin:0 110px;
+}
+.signup-btn {
+    margin:0 60px;
+}
+
+
+
+
