@@ -94,8 +94,8 @@
                         </td>
                         <td>
                             <form action="${pageContext.request.contextPath}/admin" method="post">
-                                <input type="hidden" name="positionsId" value="${positions.id}"/>
-                                <input type="hidden" name="action" value="delete"/>
+                                <input type="hidden" name="positionId" value="${positions.id}"/>
+                                <input type="hidden" name="action" value="deletePos"/>
                                 <button type="submit">Delete</button>
                             </form>
                         </td>

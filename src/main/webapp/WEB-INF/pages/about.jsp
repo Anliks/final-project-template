@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+    <style>
+        div.search {display: none !important}
+    </style>
+
     <!-- Bootstrap сетка -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
 

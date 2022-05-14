@@ -5,6 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <style>
+        div.search {display: none !important}
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add</title>

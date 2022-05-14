@@ -24,7 +24,7 @@ public class ProductService {
         Positions product = productRepository.findByName(name);
 
         if (product == null) {
-            throw new UsernameNotFoundException("product not found");
+            throw new IllegalArgumentException("product not found");
         }
 
         return product;

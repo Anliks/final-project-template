@@ -5,6 +5,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+    <style>
+        div.search {display: none !important}
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pos</title>
@@ -35,6 +40,7 @@
 
 <div class="container mt-5">
     <div class="row">
+
 
         <!-- Карточка -->
 <c:forEach items="${allProducts}"  var="positions">
@@ -84,7 +90,11 @@
 
                     <div class="info-price">
                         <span class="price">${positions.price}<small>р</small></span>
-                        <button class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+                        <form action="${pageContext.request.contextPath}/addproduct" method="post" onsubmit="addPos()">
+                            <input type="hidden" name="positionId" value="${positions.id}"/>
+                            <input type="hidden" name="action" value="add"/>
+                        <button type="submit" class="add-to-cart"><ion-icon name="cart-outline"></ion-icon></button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -98,6 +108,12 @@
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+<script type="text/javascript">
+    function addPos() {
+        alert("добавлено")
+    }
+</script>
 </body>
 </html>
 

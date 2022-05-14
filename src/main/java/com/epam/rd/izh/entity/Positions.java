@@ -4,7 +4,7 @@ package com.epam.rd.izh.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.sql.Blob;
+
 
 
 @Data
@@ -14,7 +14,7 @@ public class Positions {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String name;
     private String type;
     private String country;
@@ -28,7 +28,7 @@ public class Positions {
 
     }
 
-  public Positions(int id, String name, String type, String country, String description, Long price, String img) {
+  public Positions(Long id, String name, String type, String country, String description, Long price, String img) {
     this.id = id;
     this.name = name;
     this.type = type;

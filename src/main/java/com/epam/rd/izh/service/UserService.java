@@ -76,7 +76,7 @@ public class UserService implements UserDetailsService {
     public User createUser(User user) {
         User usersFromDb = userRepository.findByUsername(user.getUsername());
         if (usersFromDb != null) {
-            throw new IllegalArgumentException("Пользователь с таким именем или почтой уже существует");
+            throw new IllegalArgumentException("Пользователь с таким именем уже существует");
         }
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         userRepository.save(user);
