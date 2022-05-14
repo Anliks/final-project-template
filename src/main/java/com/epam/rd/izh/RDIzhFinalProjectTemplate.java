@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
  * <p>Т.е. наличие @SpringBootApplication включает сканирование компонентов, автоконфигурацию и показывает разным компонентам Spring
  * (например, интеграционным тестам), что это Spring Boot приложение.
  */
-@SpringBootApplication
+@SpringBootApplication()
 public class RDIzhFinalProjectTemplate {
 	public static void main(String[] args) {
 		SpringApplication.run(RDIzhFinalProjectTemplate.class, args);
